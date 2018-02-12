@@ -1,0 +1,21 @@
+npm init --yes
+npm install express --save
+npm install -S webpack
+npm install babel-cli babel-core babel-preset-es2015 --save-dev
+npm install pug-cli pug-loader --save
+npm install pug
+
+npm install css-loader --save
+npm install --save-dev extract-text-webpack-plugin
+
+npm install sass-loader --save
+npm install style-loader --save
+npm install node-sass --save
+npm install url-loader --save
+npm install fs --save
+
+
+sudo npm install -g eslint
+npm install eslint --save-dev
+eslint --init
+

@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+.idea
+*main.js
+*main.css
+*.pug.js
+/static/src
+*npm-debug.log
