@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "webpack",
+    "prestart": "webpack && npm run my-pug && npm run my-babel",
     "start": "node index.js",
+    "my-pug": "pug -c --extension 'pug.js' --name-after-file ./static",
+    "my-babel": "babel static/src/tmp -d static/src --presets es2015",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

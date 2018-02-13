@@ -1,11 +1,20 @@
 "use strict";
 
 import "../views/main-page/main-page.scss";
+import MainPage from "../views/main-page/MainPage";
+
 
 class Main {
     constructor() {
-        console.log("It works !!!");
+        let a = 5;
+        let b = 10;
+        let c = a + b;
+        console.log(c);
+
+        this.mainPage = new MainPage();
     }
 }
 
-new Main();
+window.onload = function() {
+    new Main();
+};

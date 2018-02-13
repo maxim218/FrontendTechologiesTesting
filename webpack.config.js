@@ -1,7 +1,5 @@
 "use strict";
 
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
-
 module.exports = {
     entry: "./static/modules/Main.js",
     output: {
@@ -32,13 +30,5 @@ module.exports = {
                 }]
             }
         ]
-    },
-    plugins: [
-        new ExtractTextPlugin({
-            filename: "./static/src/main.css"
-        })
-    ],
-    node: {
-        fs: 'empty'
     }
 };
